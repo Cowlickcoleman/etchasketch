@@ -1,0 +1,171 @@
+
+
+/* header - top of etchasketch */
+    .header{
+        display:flex;
+        height:80px;
+        max-width:800px;
+        min-width:785px;
+        margin:50px auto 0px auto;
+        align-items:center;
+        justify-content:center;
+        background-color:#DE6252;
+        border-right: 15px outset #913427;
+        border-left: 15px outset #913427;
+        border-top: 15px outset #913427;
+    }
+
+        p {
+            margin: 10px;
+            color:gold;
+            font-size: 20px;
+            font-weight:bold;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+            #cursive {
+                font-family: 'Kaushan Script', cursive;
+                font-size:48px;
+                font-weight: normal;
+                padding-bottom:5px;
+            }
+
+/* content - middle portion of etchcasketch */
+    .content {
+        display:flex;
+        min-width:785px;
+        flex-wrap: wrap;
+        max-width:800px;
+        margin:0px auto;
+        justify-content: center;
+        background-color:#DE6252;
+        border-right:15px outset #913427;
+        border-left: 15px outset #913427;
+    }
+
+        #canvas {
+            display:inline-flex;
+            flex-wrap: wrap;
+            gap:0px;
+            position: relative;
+            background-color: lightgray;
+            border: 10px inset #913427;
+            min-width:580px;
+            min-height:580px;
+            border-radius: 35px;
+            margin:0px 100px 20px 100px;
+            padding:10px;
+        }
+
+        .canvas-pixel{
+            vertical-align: bottom;
+            background-color: lightgray;
+            outline:solid 1px darkgrey;
+            font-size: 0px;
+            margin:0px;
+            width:0px;
+            height:0px;
+        }
+
+/* footer - bottom third of etchasketch*/
+    .footer{
+        display:flex;
+        max-width:800px;
+        min-width:785px;
+        margin:0px auto;
+        position: relative;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:space-between;
+        height:150px;
+        background-color: #DE6252;
+        border-bottom:15px outset #913427;
+        border-right:15px outset #913427;
+        border-left: 15px outset #913427;
+    }
+
+    .buttons, .turners { position: absolute}
+
+    .buttons{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        z-index:1;
+    }
+
+        .button{
+            border-radius: 80px;
+            border: none;
+            width:80px;
+            height:80px;
+            margin:5px;
+            font: 16px 'Fredoka One', cursive;
+            cursor: pointer;
+            background-color: whitesmoke;
+            color: #666;
+        }
+
+            #new-canvas {
+                border: solid 5px white;
+            }
+
+            #red {
+                background-color: #913427;
+            }
+
+            #random {
+                border: solid 5px linear-gradient(to bottom right, #C7E36B,#199156);
+            }
+                #random:hover{
+                    border: whitesmoke 2px solid;
+                    color:white;
+                    background-image: linear-gradient(to bottom right,#199156,#3177DE);
+                }
+
+            #black {
+                background-color: black;
+            }
+
+    .turners {
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        height:100px;
+        width:100%;
+        position: absolute;
+        z-index: 0;
+    }
+        .turner{
+            background-color:white;
+            border-radius: 100px;
+            width:100px;
+            height:100px;
+            border:solid 15px lightgray;
+            margin-bottom:20px;
+    }
+
+            #left {
+                margin-left:20px;
+            }
+
+            #right {
+                margin-right:20px;
+            }
+/* signature at the bottom of page */
+
+.signature {
+    display:flex;
+    flex-direction: row-reverse;
+    max-width:800px;
+    min-width:785px;
+    margin-right:0px;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+    #grey {
+        font-weight: 100;
+        color:#666;
+        margin-right:0px;
+    }
